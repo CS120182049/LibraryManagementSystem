@@ -1,0 +1,80 @@
+﻿@model Safiproject.Models.Library
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Library</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Registrion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Registrion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dpeartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dpeartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libraian_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libraian_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Issues_Book)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Issues_Book)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

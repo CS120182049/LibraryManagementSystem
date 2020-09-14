@@ -1,0 +1,74 @@
+﻿@model Safiproject.Models.Library
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Library</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Registrion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Registrion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dpeartment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dpeartment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libraian_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libraian_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Issues_Book)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Issues_Book)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
